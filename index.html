@@ -124,7 +124,13 @@
             font-size: 0.95em;
             border-left: 5px solid #00acc1;
         }
-
+        .video-preview {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
         @media (max-width: 600px) {
             body {
                 padding: 10px;
@@ -220,7 +226,17 @@
         * Если вы ввели значение K, применяется специальная формула: доля шампуня = K / (10 * M).<br>
         * Например, при K=24 и M=10: доля = 24/100 = 0.24 → на 1000 мл это 240 мл шампуня.
     </div>
+    
+    <hr>
 
+    <h3>Видеоинструкция, как промерить ваш пенокомплект</h3>
+    <div class="video-wrap">
+        <video class="video-preview" controls poster="https://ak-dv.ru/upload/video_calc.jpg" preload="metadata">
+            <source src="https://ak-dv.ru/upload/copy_0A5CDD14-B55E-47E3-8E9C-768850725C69.mp4" type="video/mp4">
+            Ваш браузер не поддерживает встроенные видео.
+        </video>
+    </div>
+    
     <script>
         let currentK = null;
 
@@ -344,3 +360,4 @@
     </script>
 </body>
 </html>
+
